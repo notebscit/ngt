@@ -1,0 +1,22 @@
+$(document).ready(function () {
+  
+        $("#b1").click(function () {
+            alert("text =" + $("#p1").text());
+        });
+
+        $("#b2").click(function () {
+            alert("html =" + $("#p2").html());
+        });
+
+
+        $("#b3").click(function () {
+            $("#p1").text("adding text");
+        });
+
+        $("#b4").click(function () {
+            $("#p2").html("<h1>hello form h1</h1>");
+        });
+
+
+
+});
