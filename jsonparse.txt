@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+hello
+</title>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+var a='{"name":"Krishna","age":"20"}';
+var obj=JSON.parse(a);
+$("#p1").text("string="+a);
+$("#p2").text("Age="+obj.age);
+
+//localStorage.setItem("testJSON",a);
+//var b=localStorage.getItem("testJSON");
+//$("#p1").text(b)
+
+
+$("#p3").text("Converted Text from stringify method "+JSON.stringify(obj));
+});
+</script>
+</head>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+
+
+</body>
+</html>
